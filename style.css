@@ -383,6 +383,9 @@ body {
   align-items: center;
   margin: 40px;
 }
+.work-card img {
+  width: 400px;
+}
 .work-card-title {
   margin: 8px 0;
   font-size: 20px;
