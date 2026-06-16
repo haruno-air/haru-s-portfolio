@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="「かわぐちはるな」のWebデザインをまとめたポートフォリオサイト。">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@3.0.2/destyle.css">
+  <link rel="stylesheet" href="style.css">
+  <title>かわぐちはるなのポートフォリオ</title>
+</head>
+
+<body>
+  <header class="header">
+    <a href="index.html"><img class="logo" src="images/logo.png"></a>
+
+    <div id="hamburger"><!--▽▽ハンバーガーメニュー▽▽-->
+        <div class="icon">
+         <span></span>
+         <span></span>
+         <span></span>
+        </div>
+    </div><!--△△ハンバーガーメニュー△△-->
+    
+    <nav class="ham"><!--▽▽ハンバーガーメニューのリスト▽▽-->
+      <img class="ham-image" src="images/hiyoko.png">
+      <ul>
+        <li><a href="#concept">ホーム</a></li>
+        <li><a href="#attention">作品</a></li>
+        <li><a href="#menu">わたし</a></li>
+        <li><a href="#information">問合せ</a></li>
+      </ul>
+    </nav><!--△△ハンバーガーメニューのリスト△△-->
+
+    <!----▽▽jQuery▽▽---->
+    <script src="jquery-4.0.0.min.js"></script>
+      <script>
+        $('#hamburger').on('click', function(){
+        $('.icon').toggleClass('close');
+        $('.ham').slideToggle();
+        });
+      </script>
+    <!----△△jQuery△△---->
+  </header>
+  
+
+  <main class="contact white-back">
+    <h1 class="page-title-contact">ＣＯＮＴＡＣＴ</h1>
+
+    <img class="contact-image" src="https://placehold.jp/400x300.png" alt="問合せ画面のイメージ">
+
+    <p class="contact-thanks">
+      ご覧いただきありがとうございました。
+    </p>
+
+    <p class="contact-text">
+      何かございましたら、下記アドレスまで<br>
+      お気軽にご連絡ください。
+    </p>
+
+    <a class="mail-link" href="mailto:haruno.air@gmail.com">
+        haruno.air@gmail.com
+    </a>
+  </main>
+
+
+  <footer class="footer">
+    <p class="footer-title">
+      かわぐちはるなのポートフォリオ
+    </p>
+
+    <nav class="footer-nav">
+      <ul>
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="work.html">作品</a></li>
+        <li><a href="about.html">わたし</a></li>
+        <li><a href="contact.html">問合せ</a></li>
+      </ul>
+    </nav>
+
+    <p class="copyright">
+      &copy;2026 Haruna Kawaguchi Portofolio.
+    </p>
+  </footer>
+</body>
+</html>

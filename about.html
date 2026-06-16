@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="「かわぐちはるな」のWebデザインをまとめたポートフォリオサイト。">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@3.0.2/destyle.css">
+  <link rel="stylesheet" href="style.css">
+  <title>かわぐちはるなのポートフォリオ</title>
+</head>
+
+<body>
+  <header class="header">
+    <a href="index.html"><img class="logo" src="images/logo.png"></a>
+
+    <div id="hamburger"><!--▽▽ハンバーガーメニュー▽▽-->
+        <div class="icon">
+         <span></span>
+         <span></span>
+         <span></span>
+        </div>
+    </div><!--△△ハンバーガーメニュー△△-->
+    
+    <nav class="ham"><!--▽▽ハンバーガーメニューのリスト▽▽-->
+      <img class="ham-image" src="images/hiyoko.png">
+      <ul>
+        <li><a href="#concept">ホーム</a></li>
+        <li><a href="#attention">作品</a></li>
+        <li><a href="#menu">わたし</a></li>
+        <li><a href="#information">問合せ</a></li>
+      </ul>
+    </nav><!--△△ハンバーガーメニューのリスト△△-->
+
+    <!----▽▽jQuery▽▽---->
+    <script src="jquery-4.0.0.min.js"></script>
+      <script>
+        $('#hamburger').on('click', function(){
+        $('.icon').toggleClass('close');
+        $('.ham').slideToggle();
+        });
+      </script>
+    <!----△△jQuery△△---->
+  </header>
+  
+
+  <main class="about white-back">
+    <h1 class="page-title">
+      わたしについて
+    </h1>
+
+    <section class="about-profile">
+      <p class="about-name-en">
+        kawaguchi haruna
+      </p>
+
+      <h2 class="about-name-jp">
+        かわぐち はるな
+      </h2>
+
+      <img class="profile-image" src="#" alt="★★★★★">
+
+      <dl class="profile-table">
+        <div>
+          <dt>誕生日</dt>
+          <dd>05.12</dd>
+        </div>
+        <div>
+          <dt>特技</dt>
+          <dd></dd>
+        </div>
+        <div>
+          <dt>趣味</dt>
+          <dd>ペットの動画作成・SNSで癒し動物探し</dd>
+        </div>
+        <div>
+          <dt>好きなもの</dt>
+          <dd>
+            動物・ポケモン・ガチャガチャ<br>
+            歌う・寝る・食べる
+          </dd>
+        </div>
+      </dl>
+
+      <div class="about-text">
+        <p>
+          岩手県久慈市で生まれ育ちました。<br>
+          高校進学を機に、単身赴任中の父がいる横浜へ引越し。<br>
+          <br>
+          小動物を飼い始めてSNSへの投稿を始めた事がきっかけで、<br>
+          コンテンツ作成に惹かれ、Webデザイナーを目指すことに。<br>
+          4か月間、スクールにてWebデザインを広く学び、現在は転職活動中です。<br>
+          デザインのモットーは「分かりやすく、でも可愛さを忘れない」です。
+        </p>
+      </div>
+    </section>
+
+    <section class="skill">
+      <h2 class="skill-title">できること</h2>
+      
+      <div class="skill-grid">
+        <article class="skill-card">
+          <img src="#" alt="★★★★★">
+          <h3>Webデザイン</h3>
+          <p>
+            ワイヤーフレームやデザインカンプの作成ができます。
+            ユーザーに分かりやすいシンプルなデザインでありつつ、魅力的なデザインになるよう心がけています。</p>
+          <p>
+            ■使用ツール<br>
+            　Photoshop/ Figma / Canva
+          </p>
+        </article>
+
+        <article class="skill-card">
+          <img src="#" alt="★★★★★">
+          <h3>Webコーディング</h3>
+          <p>
+            デザインカンプを元に、再現するコードを書くことができます。
+            規則性のある命名で、誰が見ても分かりやすいコードを書くよう心がけています。
+            レスポンシブ対応も可能です。
+          </p>
+          <p>
+            ■使用ツール<br>
+            　WordPress / HTML・CSS（Visual Studio Codeを利用）
+          </p>
+        </article>
+
+        <article class="skill-card">
+          <img src="#" alt="★★★★★">
+          <h3>画像編集・バナー作成</h3>
+          <p>
+            画像の補正や切り抜き・一部の色を変更することができます。
+            目的に合わせて、バナーを作成することができます。
+          </p>
+          <p>
+            ■使用ツール<br>
+            　Photoshop / Canva
+          </p>
+        </article>
+
+        <article class="skill-card">
+          <img src="#" alt="★★★★★">
+          <h3>動画作成</h3>
+          <p>
+            動画のトリミング・テロップ挿入・音源挿入など、動画を作成することができます。
+          </p>
+          <p>
+            ■使用ツール<br>
+            　DaVinci Resolve / Adobe Premiere Pro / Canva
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <p class="thanks">ご覧いただきありがとうございます。</p>
+
+    <a href="#"><img src="#">Pagetopへ</a>
+  </main>
+
+
+  <footer class="footer">
+    <p class="footer-title">
+      かわぐちはるなのポートフォリオ
+    </p>
+
+    <nav class="footer-nav">
+      <ul>
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="work.html">作品</a></li>
+        <li><a href="about.html">わたし</a></li>
+        <li><a href="contact.html">問合せ</a></li>
+      </ul>
+    </nav>
+
+    <p class="copyright">
+      &copy;2026 Haruna Kawaguchi Portofolio.
+    </p>
+  </footer>
+</body>
+</html>
