@@ -8,9 +8,14 @@
 html {
   scroll-behavior: smooth;
 }
+
 body {
+  background: url(images/back-square.png);
+  background-position: top left;
   font-family: 'ZEN丸ゴシック';
+  color: #444;
 }
+
 img {
   max-width: 100%;
 }
@@ -75,12 +80,6 @@ img {
 /***********************************
 　ホーム
 ************************************/
-body {
-  background: url(images/back.png);
-  background-position: top left;
-  color: #444;
-}
-
 .home {
   display: flex;
   justify-content: center;
@@ -116,11 +115,16 @@ body {
 
 .hero-title-top,
 .hero-title-bottom {
-  margin: 30px;
   font-size: 50px;
   font-weight: 800;
   letter-spacing: 0.1em;
   color: #444444;
+}
+.hero-title-top {
+  margin: 50px 0 30px 0;
+}
+.hero-title-bottom {
+  margin: 30px;
 }
 
 .hero-visual {
@@ -157,9 +161,9 @@ body {
 .hero-text {
   color: #fff;
   letter-spacing: 0.1em;
-  line-height: 1.3;
+  line-height: 1.5;
   text-align: center;
-  margin-bottom: 50px;
+  margin: 50px 0 150px 0;
 }
 
 .footer {
@@ -343,9 +347,10 @@ body {
 .work-layout {
   display: flex;
 }
-/*****サイトメニュー*****/
+/*****サイドメニュー*****/
 .work-filter {
-  width: 20%;
+  width: 25%;
+  max-width: 250px;
   padding-left: 5%;
   background-color: #fffff6;
 }
@@ -359,6 +364,7 @@ body {
 
 /*****メイン*****/
 .work-list {
+  width: 75%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -371,7 +377,7 @@ body {
 }
 
 .work-list-detail {
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -381,7 +387,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 40px;
+  margin: 50px 40px;
 }
 .work-card img {
   width: 400px;
@@ -390,9 +396,19 @@ body {
   margin: 8px 0;
   font-size: 20px;
   font-weight: 600;
+  letter-spacing: 0.1em;
 }
 .work-card-detail {
   font-size: 12px;
+  font-weight: 100;
+}
+
+.work-card a, 
+.preview-pc img,/*ここから下は作品詳細ページ*/
+.preview-smart img,
+.square img,
+.rectangle img {
+  border: 1px solid #999999;
 }
 
 /***********************************
@@ -506,13 +522,6 @@ figcaption {
   margin: 10px auto;
   padding: 10px;
   border: 1px dotted gray;
-}
-
-.preview-pc img,
-.preview-smart img,
-.square img,
-.rectangle img {
-  border: 1px solid #999999;
 }
 
 .period-table {
