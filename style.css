@@ -858,7 +858,7 @@ figcaption {
 }
 .work-filter li {
   padding: 0 20px;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 500;
 }
 .work-list {
@@ -957,6 +957,8 @@ figcaption {
     width: 60%;
   }
   .mail-link {
+    width: 80%;
+    max-width: 280px;
     margin: 30px auto;
     padding: 5px 0;
   }
