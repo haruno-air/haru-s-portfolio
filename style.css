@@ -774,12 +774,16 @@ figcaption {
   .hero {
     width: 100%;
   }
-  .hero-title-top {
-    margin: 20px 0;
-  }
+  .hero-title-top,
   .hero-title-bottom {
     margin: 20px 0;
   }
+  .hero-title-top,
+  .hero-title-bottom {
+    font-size: 46px;
+    font-weight: 800;
+  }
+
   .hero-text {
     margin: 30px 0;
   }
