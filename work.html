@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@3.0.2/destyle.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <title>かわぐちはるなのポートフォリオ</title>
 </head>
 
@@ -15,13 +16,13 @@
     <a href="index.html"><img class="logo" src="images/logo.png"></a>
 
     <div id="hamburger"><!--▽▽ハンバーガーメニュー▽▽-->
-        <div class="icon">
-         <span></span>
-         <span></span>
-         <span></span>
-        </div>
+      <div class="icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div><!--△△ハンバーガーメニュー△△-->
-    
+
     <nav class="ham"><!--▽▽ハンバーガーメニューのリスト▽▽-->
       <img class="ham-image" src="images/hiyoko.png">
       <ul>
@@ -34,12 +35,12 @@
 
     <!----▽▽jQuery▽▽---->
     <script src="jquery-4.0.0.min.js"></script>
-      <script>
-        $('#hamburger').on('click', function(){
+    <script>
+      $('#hamburger').on('click', function () {
         $('.icon').toggleClass('close');
         $('.ham').slideToggle();
-        });
-      </script>
+      });
+    </script>
     <!----△△jQuery△△---->
   </header>
 
@@ -50,41 +51,102 @@
     <div class="work-layout">
       <aside class="work-filter">
         <ul>
-          <li><a>すべて</a></li>
-          <li><a href="#">Webサイト</a></li>
-          <li><a href="#">バナー</a></li>
-          <li><a href="#">動画</a></li>
+          <li><a href="#web-site">Webサイト</a></li>
+          <li><a href="#banner">バナー</a></li>
+          <li><a href="#movie">動画</a></li>
         </ul>
       </aside>
 
       <section class="work-list">
-        <h2>すべて</h2>
+        <div id="web-site">
+          <h2>Webサイト</h2>
+          <div class="work-list-detail">
+            <article class="work-card">
+              <a href="work-portfolio.html"><img src="images/portfolio.png" alt="作品の画像１"></a>
+              <p class="work-card-title">ポートフォリオ</p>
+              <p class="work-card-detail">設計 / 画像作成 / デザイン / コーディング</p>
+            </article>
 
-        <div class="work-list-detail">
-        <article class="work-card">
-          <a href="work-portfolio.html"><img src="images/portfolio.png" alt="作品の画像１"></a>
-          <p class="work-card-title">ポートフォリオ</p>
-          <p class="work-card-detail">設計 / 画像作成 / デザイン / コーディング</p>
-        </article>
+            <article class="work-card">
+              <a href="work-minimofu.html"><img src="images/minimofu.png" alt="作品の画像２"></a>
+              <p class="work-card-title">小さなモフモフ放送局（SNSアカウント）</p>
+              <p class="work-card-detail">設計 / 画像作成 / デザイン / コーディング</p>
+            </article>
 
-        <article class="work-card">
-          <a href="work-minimofu.html"><img src="images/minimofu.png" alt="作品の画像２"></a>
-          <p class="work-card-title">小さなモフモフ放送局（SNSアカウント）</p>
-          <p class="work-card-detail">設計 / 画像作成 / デザイン / コーディング</p>
-        </article>
+            <article class="work-card">
+              <a href="work-mofil.html"><img src="images/mofil.png" alt="作品の画像３"></a>
+              <p class="work-card-title">【架空】 動物と過ごせるカフェ　Mofil</p>
+              <p class="work-card-detail">設計 / 画像作成 / デザイン / コーディング</p>
+            </article>
 
-        <article class="work-card">
-          <a href="work-mofil.html"><img src="images/mofil.png" alt="作品の画像３"></a>
-          <p class="work-card-title">【架空】 動物と過ごせるカフェ　Mofil</p>
-          <p class="work-card-detail">設計 / 画像作成 / デザイン / コーディング</p>
-        </article>
-
-        <article class="work-card">
-          <a href="work-mimofa.html"><img src="images/mimofa.png" alt="作品の画像４"></a>
-          <p class="work-card-title">【架空】 小動物専門ショップ　MimoFa</p>
-          <p class="work-card-detail">設計 / 画像作成 / デザイン / コーディング</p>
-        </article>
+            <article class="work-card">
+              <a href="work-mimofa.html"><img src="images/mimofa.png" alt="作品の画像４"></a>
+              <p class="work-card-title">【架空】 小動物専門ショップ　MimoFa</p>
+              <p class="work-card-detail">設計 / 画像作成 / デザイン / コーディング</p>
+            </article>
+          </div>
         </div>
+
+        <div id="banner">
+          <h2>バナー</h2>
+          <div class="work-list-detail">
+            <article class="work-card">
+              <a href="work-banner-mofil.html"><img src="images/mockup-mofil.png" alt="バナー作品１"></a>
+              <p class="work-card-title">【架空】動物と過ごせるカフェ</p>
+              <p class="work-card-detail">設計 / 画像編集 / デザイン</p>
+            </article>
+
+            <article class="work-card">
+              <a href="#"><img src="https://placehold.jp/400x300.png" alt="バナー作品２"></a>
+              <p class="work-card-title">バナー作品２</p>
+              <p class="work-card-detail">設計 / 画像編集 / デザイン</p>
+            </article>
+
+            <article class="work-card">
+              <a href="#"><img src="https://placehold.jp/400x300.png" alt="バナー作品３"></a>
+              <p class="work-card-title">バナー作品３</p>
+              <p class="work-card-detail">設計 / 画像編集 / デザイン</p>
+            </article>
+
+            <article class="work-card">
+              <a href="#"><img src="https://placehold.jp/400x300.png" alt="バナー作品４"></a>
+              <p class="work-card-title">バナー作品４</p>
+              <p class="work-card-detail">設計 / 画像編集 / デザイン</p>
+            </article>
+          </div>
+        </div>
+
+        <!--------------------
+        <div id="movie">
+          <h2>動画</h2>
+          <div class="work-list-detail">
+            <article class="work-card">
+              <a href="#"><img src="https://placehold.jp/400x300.png" alt="動画作品１"></a>
+              <p class="work-card-title">動画作品１</p>
+              <p class="work-card-detail">設計 / 画像編集 / デザイン</p>
+            </article>
+
+            <article class="work-card">
+              <a href="#"><img src="https://placehold.jp/400x300.png" alt="動画作品２"></a>
+              <p class="work-card-title">動画作品２</p>
+              <p class="work-card-detail">設計 / 画像編集 / デザイン</p>
+            </article>
+
+            <article class="work-card">
+              <a href="#"><img src="https://placehold.jp/400x300.png" alt="動画作品３"></a>
+              <p class="work-card-title">動画作品３</p>
+              <p class="work-card-detail">設計 / 画像編集 / デザイン</p>
+            </article>
+
+            <article class="work-card">
+              <a href="#"><img src="https://placehold.jp/400x300.png" alt="動画作品４"></a>
+              <p class="work-card-title">動画作品４</p>
+              <p class="work-card-detail">設計 / 画像編集 / デザイン</p>
+            </article>
+          </div>
+        </div>
+    -------------------->
+
       </section>
     </div>
 
