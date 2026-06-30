@@ -429,7 +429,7 @@ img {
 
 /*****メイン*****/
 .work-list {
-  width: 75%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -447,9 +447,8 @@ img {
 
 .work-list-detail {
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .work-card {
@@ -458,16 +457,18 @@ img {
   align-items: center;
   margin: 50px 40px;
 }
+
 .work-card img {
   width: 400px;
 }
+
 .work-card img:hover {
   transform: translateY(-8px);
 }
 .work-card-title {
   margin: 8px 0;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.1em;
 }
 .work-card-detail {
@@ -864,6 +865,20 @@ figcaption {
 .work-list {
   width: 100%;
 }
+#web-site .work-list-detail {
+  grid-template-columns: repeat(1, 1fr);  
+}
+
+#banner .work-card-title {
+  font-size: 10px;
+}
+#banner .imaginary {
+  font-size: 9px;
+}
+#banner .work-card-detail {
+  font-size: 8px;
+}
+
 .work-list img {
   width: 80%;
   display: block;
